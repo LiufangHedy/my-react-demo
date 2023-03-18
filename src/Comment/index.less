@@ -1,0 +1,62 @@
+.comment-container {
+	font: 13px/1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #333;
+}
+.comment-wrapper {
+    display: flex;
+    margin-bottom: 20px;
+    a {
+        margin-top: 5px;
+        img {
+            width: 48px;
+            height: 48px;
+        }
+    }
+    .comment {
+        flex: 1;
+        margin-left: 16px;
+        border: 1px solid #eee;
+        .comment-header {
+            height: 40px;
+            line-height: 40px;
+            padding-left: 10px;
+            background-color: #f2f8fa;
+            .comment-time {
+                margin-left: 10px;
+                color: #767676;
+            }
+
+        }
+        .comment-content {
+            padding-left: 10px;
+            // 自动换行，允许拆单词或者URL进行换行
+            word-wrap: break-word;
+        }
+    }
+}
+.comment-form {
+    .comment-main {
+        display: flex;
+        a {
+            margin-top: 6px;
+            img {
+                width: 48px;
+                height: 48px;
+            }
+        }
+        .comment-text {
+            margin-left: 16px;
+            flex: 1;
+            textarea {
+                width: 100%;
+                border: 1px solid #ccc;
+            }
+        }
+    }
+    .comment-footer {
+        float: right;
+        input {
+            margin-left: 5px;
+        }
+    }
+}
